@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42D4D8DEE59EAD70D1B2924C /* Pods_Pechinchasdodia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF648F3CD38E32DD4CADD1A /* Pods_Pechinchasdodia.framework */; };
+		6807F1F11DB66920006061B1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6807F1F01DB66920006061B1 /* BaseViewController.swift */; };
+		6807F1F31DB66BC1006061B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6807F1F21DB66BC1006061B1 /* LoginViewController.swift */; };
+		6807F1F51DB66BCC006061B1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6807F1F41DB66BCC006061B1 /* RegisterViewController.swift */; };
+		6807F1F71DB66C0F006061B1 /* ListPechinchasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6807F1F61DB66C0F006061B1 /* ListPechinchasViewController.swift */; };
+		6807F1F91DB66C1D006061B1 /* DetailPechinchaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6807F1F81DB66C1D006061B1 /* DetailPechinchaViewController.swift */; };
+		6807F1FB1DB66C3E006061B1 /* PechinchaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6807F1FA1DB66C3E006061B1 /* PechinchaTableViewCell.swift */; };
+		6807F1FD1DB66C4F006061B1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6807F1FC1DB66C4F006061B1 /* MenuViewController.swift */; };
+		6807F1FF1DB66C93006061B1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6807F1FE1DB66C93006061B1 /* DataService.swift */; };
+		6807F2011DB66D03006061B1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6807F2001DB66D03006061B1 /* User.swift */; };
+		6807F2031DB66D1E006061B1 /* Pechincha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6807F2021DB66D1E006061B1 /* Pechincha.swift */; };
+		6807F20A1DB6735E006061B1 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6807F2061DB6735E006061B1 /* Bolts.framework */; };
+		6807F20B1DB6735E006061B1 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6807F2071DB6735E006061B1 /* FBSDKCoreKit.framework */; };
+		6807F20C1DB6735E006061B1 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6807F2081DB6735E006061B1 /* FBSDKLoginKit.framework */; };
+		6807F20D1DB6735E006061B1 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6807F2091DB6735E006061B1 /* FBSDKShareKit.framework */; };
+		6807F2111DB69C0D006061B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6807F2101DB69C0D006061B1 /* GoogleService-Info.plist */; };
+		680E9B091DB708C5001360B3 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 680E9B061DB708C5001360B3 /* Roboto-Bold.ttf */; };
+		680E9B0A1DB708C5001360B3 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 680E9B071DB708C5001360B3 /* Roboto-Light.ttf */; };
+		680E9B0B1DB708C5001360B3 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 680E9B081DB708C5001360B3 /* Roboto-Regular.ttf */; };
+		68D1CBF41DB65F8F00ACF460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D1CBF31DB65F8F00ACF460 /* AppDelegate.swift */; };
+		68D1CBF91DB65F8F00ACF460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D1CBF71DB65F8F00ACF460 /* Main.storyboard */; };
+		68D1CBFB1DB65F8F00ACF460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D1CBFA1DB65F8F00ACF460 /* Assets.xcassets */; };
+		68D1CC091DB65F8F00ACF460 /* PechinchasdodiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D1CC081DB65F8F00ACF460 /* PechinchasdodiaUITests.swift */; };
+		D20129003BBC006DEE99E37E /* Pods_PechinchasdodiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F82B0C7579BA196582598B9 /* Pods_PechinchasdodiaUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68D1CC051DB65F8F00ACF460 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68D1CBE81DB65F8F00ACF460 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68D1CBEF1DB65F8F00ACF460;
+			remoteInfo = Pechinchasdodia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1749E78CC5440CFCAA03AF20 /* Pods-Pechinchasdodia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pechinchasdodia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pechinchasdodia/Pods-Pechinchasdodia.release.xcconfig"; sourceTree = "<group>"; };
+		41363BE8B724B94BBCC4A008 /* Pods-PechinchasdodiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PechinchasdodiaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PechinchasdodiaUITests/Pods-PechinchasdodiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F82B0C7579BA196582598B9 /* Pods_PechinchasdodiaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PechinchasdodiaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6807F1F01DB66920006061B1 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6807F1F21DB66BC1006061B1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6807F1F41DB66BCC006061B1 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		6807F1F61DB66C0F006061B1 /* ListPechinchasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPechinchasViewController.swift; sourceTree = "<group>"; };
+		6807F1F81DB66C1D006061B1 /* DetailPechinchaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPechinchaViewController.swift; sourceTree = "<group>"; };
+		6807F1FA1DB66C3E006061B1 /* PechinchaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PechinchaTableViewCell.swift; sourceTree = "<group>"; };
+		6807F1FC1DB66C4F006061B1 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		6807F1FE1DB66C93006061B1 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		6807F2001DB66D03006061B1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6807F2021DB66D1E006061B1 /* Pechincha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pechincha.swift; sourceTree = "<group>"; };
+		6807F2041DB67008006061B1 /* Pechinchasdodia-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pechinchasdodia-Bridging-Header.h"; sourceTree = "<group>"; };
+		6807F2061DB6735E006061B1 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		6807F2071DB6735E006061B1 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		6807F2081DB6735E006061B1 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		6807F2091DB6735E006061B1 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		6807F2101DB69C0D006061B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		680E9B041DB6A80A001360B3 /* Pechinchasdodia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pechinchasdodia.entitlements; sourceTree = "<group>"; };
+		680E9B061DB708C5001360B3 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		680E9B071DB708C5001360B3 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		680E9B081DB708C5001360B3 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		68D1CBF01DB65F8F00ACF460 /* Pechinchasdodia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pechinchasdodia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D1CBF31DB65F8F00ACF460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68D1CBF81DB65F8F00ACF460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68D1CBFA1DB65F8F00ACF460 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68D1CBFF1DB65F8F00ACF460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68D1CC041DB65F8F00ACF460 /* PechinchasdodiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PechinchasdodiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D1CC081DB65F8F00ACF460 /* PechinchasdodiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PechinchasdodiaUITests.swift; sourceTree = "<group>"; };
+		68D1CC0A1DB65F8F00ACF460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94D7A0994E676360F7C3E314 /* Pods-PechinchasdodiaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PechinchasdodiaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PechinchasdodiaUITests/Pods-PechinchasdodiaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AEF648F3CD38E32DD4CADD1A /* Pods_Pechinchasdodia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pechinchasdodia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6470978BADF324A60649FDF /* Pods-Pechinchasdodia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pechinchasdodia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pechinchasdodia/Pods-Pechinchasdodia.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68D1CBED1DB65F8F00ACF460 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D4D8DEE59EAD70D1B2924C /* Pods_Pechinchasdodia.framework in Frameworks */,
+				6807F20B1DB6735E006061B1 /* FBSDKCoreKit.framework in Frameworks */,
+				6807F20D1DB6735E006061B1 /* FBSDKShareKit.framework in Frameworks */,
+				6807F20C1DB6735E006061B1 /* FBSDKLoginKit.framework in Frameworks */,
+				6807F20A1DB6735E006061B1 /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D1CC011DB65F8F00ACF460 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20129003BBC006DEE99E37E /* Pods_PechinchasdodiaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46DC123C00B1F52B28ADBFE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEF648F3CD38E32DD4CADD1A /* Pods_Pechinchasdodia.framework */,
+				4F82B0C7579BA196582598B9 /* Pods_PechinchasdodiaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6807F1EA1DB66899006061B1 /* Login, Register */ = {
+			isa = PBXGroup;
+			children = (
+				6807F1F21DB66BC1006061B1 /* LoginViewController.swift */,
+				6807F1F41DB66BCC006061B1 /* RegisterViewController.swift */,
+			);
+			name = "Login, Register";
+			sourceTree = "<group>";
+		};
+		6807F1EB1DB668AC006061B1 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				6807F1FC1DB66C4F006061B1 /* MenuViewController.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		6807F1EC1DB668B1006061B1 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				6807F1EE1DB668BD006061B1 /* Cell */,
+				6807F1ED1DB668B7006061B1 /* Detail */,
+				6807F1F61DB66C0F006061B1 /* ListPechinchasViewController.swift */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		6807F1ED1DB668B7006061B1 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				6807F1F81DB66C1D006061B1 /* DetailPechinchaViewController.swift */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		6807F1EE1DB668BD006061B1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6807F1FA1DB66C3E006061B1 /* PechinchaTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		6807F1EF1DB668EA006061B1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6807F1F01DB66920006061B1 /* BaseViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		6807F2051DB67338006061B1 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				6807F20E1DB67363006061B1 /* Facebook */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		6807F20E1DB67363006061B1 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				6807F2061DB6735E006061B1 /* Bolts.framework */,
+				6807F2071DB6735E006061B1 /* FBSDKCoreKit.framework */,
+				6807F2081DB6735E006061B1 /* FBSDKLoginKit.framework */,
+				6807F2091DB6735E006061B1 /* FBSDKShareKit.framework */,
+			);
+			name = Facebook;
+			sourceTree = "<group>";
+		};
+		680E9B051DB708A4001360B3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				680E9B061DB708C5001360B3 /* Roboto-Bold.ttf */,
+				680E9B071DB708C5001360B3 /* Roboto-Light.ttf */,
+				680E9B081DB708C5001360B3 /* Roboto-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		68D1CBE71DB65F8F00ACF460 = {
+			isa = PBXGroup;
+			children = (
+				6807F2051DB67338006061B1 /* Dependencies */,
+				68D1CBF21DB65F8F00ACF460 /* Pechinchasdodia */,
+				68D1CC071DB65F8F00ACF460 /* PechinchasdodiaUITests */,
+				68D1CBF11DB65F8F00ACF460 /* Products */,
+				9810DDF0ED73B8E85BE0E730 /* Pods */,
+				46DC123C00B1F52B28ADBFE5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		68D1CBF11DB65F8F00ACF460 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68D1CBF01DB65F8F00ACF460 /* Pechinchasdodia.app */,
+				68D1CC041DB65F8F00ACF460 /* PechinchasdodiaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68D1CBF21DB65F8F00ACF460 /* Pechinchasdodia */ = {
+			isa = PBXGroup;
+			children = (
+				680E9B041DB6A80A001360B3 /* Pechinchasdodia.entitlements */,
+				68D1CC171DB6650B00ACF460 /* Config */,
+				68D1CC161DB664FE00ACF460 /* Model */,
+				68D1CC131DB6649C00ACF460 /* Resources */,
+				68D1CC141DB664A900ACF460 /* View Controllers */,
+				68D1CC151DB664DA00ACF460 /* Supporting Files */,
+			);
+			path = Pechinchasdodia;
+			sourceTree = "<group>";
+		};
+		68D1CC071DB65F8F00ACF460 /* PechinchasdodiaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				68D1CC081DB65F8F00ACF460 /* PechinchasdodiaUITests.swift */,
+				68D1CC0A1DB65F8F00ACF460 /* Info.plist */,
+			);
+			path = PechinchasdodiaUITests;
+			sourceTree = "<group>";
+		};
+		68D1CC131DB6649C00ACF460 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				680E9B051DB708A4001360B3 /* Fonts */,
+				68D1CBFA1DB65F8F00ACF460 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		68D1CC141DB664A900ACF460 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6807F1EB1DB668AC006061B1 /* Menu */,
+				6807F1EC1DB668B1006061B1 /* List */,
+				6807F1EA1DB66899006061B1 /* Login, Register */,
+				6807F1EF1DB668EA006061B1 /* Base */,
+				68D1CBF71DB65F8F00ACF460 /* Main.storyboard */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		68D1CC151DB664DA00ACF460 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6807F2101DB69C0D006061B1 /* GoogleService-Info.plist */,
+				68D1CBFF1DB65F8F00ACF460 /* Info.plist */,
+				6807F2041DB67008006061B1 /* Pechinchasdodia-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68D1CC161DB664FE00ACF460 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6807F2001DB66D03006061B1 /* User.swift */,
+				6807F2021DB66D1E006061B1 /* Pechincha.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		68D1CC171DB6650B00ACF460 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				68D1CBF31DB65F8F00ACF460 /* AppDelegate.swift */,
+				6807F1FE1DB66C93006061B1 /* DataService.swift */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		9810DDF0ED73B8E85BE0E730 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6470978BADF324A60649FDF /* Pods-Pechinchasdodia.debug.xcconfig */,
+				1749E78CC5440CFCAA03AF20 /* Pods-Pechinchasdodia.release.xcconfig */,
+				41363BE8B724B94BBCC4A008 /* Pods-PechinchasdodiaUITests.debug.xcconfig */,
+				94D7A0994E676360F7C3E314 /* Pods-PechinchasdodiaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68D1CBEF1DB65F8F00ACF460 /* Pechinchasdodia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68D1CC0D1DB65F8F00ACF460 /* Build configuration list for PBXNativeTarget "Pechinchasdodia" */;
+			buildPhases = (
+				4B7190E7F173D1224B184AAA /* 📦 Check Pods Manifest.lock */,
+				68D1CBEC1DB65F8F00ACF460 /* Sources */,
+				68D1CBED1DB65F8F00ACF460 /* Frameworks */,
+				68D1CBEE1DB65F8F00ACF460 /* Resources */,
+				6C7C6B18B8D5B4941E442F84 /* 📦 Embed Pods Frameworks */,
+				F1559A416B898C7C9CD9B4DD /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pechinchasdodia;
+			productName = Pechinchasdodia;
+			productReference = 68D1CBF01DB65F8F00ACF460 /* Pechinchasdodia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68D1CC031DB65F8F00ACF460 /* PechinchasdodiaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68D1CC101DB65F8F00ACF460 /* Build configuration list for PBXNativeTarget "PechinchasdodiaUITests" */;
+			buildPhases = (
+				EE9190BE6759974AE0968E1F /* 📦 Check Pods Manifest.lock */,
+				68D1CC001DB65F8F00ACF460 /* Sources */,
+				68D1CC011DB65F8F00ACF460 /* Frameworks */,
+				68D1CC021DB65F8F00ACF460 /* Resources */,
+				24E667635CCDD693A415AD8C /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68D1CC061DB65F8F00ACF460 /* PBXTargetDependency */,
+			);
+			name = PechinchasdodiaUITests;
+			productName = PechinchasdodiaUITests;
+			productReference = 68D1CC041DB65F8F00ACF460 /* PechinchasdodiaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68D1CBE81DB65F8F00ACF460 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Parada Desce";
+				TargetAttributes = {
+					68D1CBEF1DB65F8F00ACF460 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = U7Z5QZ278W;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					68D1CC031DB65F8F00ACF460 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 68D1CBEF1DB65F8F00ACF460;
+					};
+				};
+			};
+			buildConfigurationList = 68D1CBEB1DB65F8F00ACF460 /* Build configuration list for PBXProject "Pechinchasdodia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68D1CBE71DB65F8F00ACF460;
+			productRefGroup = 68D1CBF11DB65F8F00ACF460 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68D1CBEF1DB65F8F00ACF460 /* Pechinchasdodia */,
+				68D1CC031DB65F8F00ACF460 /* PechinchasdodiaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68D1CBEE1DB65F8F00ACF460 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680E9B0B1DB708C5001360B3 /* Roboto-Regular.ttf in Resources */,
+				68D1CBFB1DB65F8F00ACF460 /* Assets.xcassets in Resources */,
+				68D1CBF91DB65F8F00ACF460 /* Main.storyboard in Resources */,
+				680E9B0A1DB708C5001360B3 /* Roboto-Light.ttf in Resources */,
+				680E9B091DB708C5001360B3 /* Roboto-Bold.ttf in Resources */,
+				6807F2111DB69C0D006061B1 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D1CC021DB65F8F00ACF460 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24E667635CCDD693A415AD8C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PechinchasdodiaUITests/Pods-PechinchasdodiaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B7190E7F173D1224B184AAA /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6C7C6B18B8D5B4941E442F84 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pechinchasdodia/Pods-Pechinchasdodia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE9190BE6759974AE0968E1F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F1559A416B898C7C9CD9B4DD /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pechinchasdodia/Pods-Pechinchasdodia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68D1CBEC1DB65F8F00ACF460 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6807F1FF1DB66C93006061B1 /* DataService.swift in Sources */,
+				6807F1F71DB66C0F006061B1 /* ListPechinchasViewController.swift in Sources */,
+				6807F1F31DB66BC1006061B1 /* LoginViewController.swift in Sources */,
+				68D1CBF41DB65F8F00ACF460 /* AppDelegate.swift in Sources */,
+				6807F1FB1DB66C3E006061B1 /* PechinchaTableViewCell.swift in Sources */,
+				6807F1F11DB66920006061B1 /* BaseViewController.swift in Sources */,
+				6807F2031DB66D1E006061B1 /* Pechincha.swift in Sources */,
+				6807F1F51DB66BCC006061B1 /* RegisterViewController.swift in Sources */,
+				6807F1F91DB66C1D006061B1 /* DetailPechinchaViewController.swift in Sources */,
+				6807F2011DB66D03006061B1 /* User.swift in Sources */,
+				6807F1FD1DB66C4F006061B1 /* MenuViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D1CC001DB65F8F00ACF460 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68D1CC091DB65F8F00ACF460 /* PechinchasdodiaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68D1CC061DB65F8F00ACF460 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68D1CBEF1DB65F8F00ACF460 /* Pechinchasdodia */;
+			targetProxy = 68D1CC051DB65F8F00ACF460 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68D1CBF71DB65F8F00ACF460 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68D1CBF81DB65F8F00ACF460 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68D1CC0B1DB65F8F00ACF460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Pechinchasdodia/Pechinchasdodia-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68D1CC0C1DB65F8F00ACF460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Pechinchasdodia/Pechinchasdodia-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68D1CC0E1DB65F8F00ACF460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6470978BADF324A60649FDF /* Pods-Pechinchasdodia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Pechinchasdodia/Pechinchasdodia.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = U7Z5QZ278W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Pechinchasdodia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.paradadesce.pechinchasdodia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a1d8d71f-03ca-4aa4-8bad-d35e003c73c4";
+				PROVISIONING_PROFILE_SPECIFIER = "Pechinchas do dia Dev";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		68D1CC0F1DB65F8F00ACF460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1749E78CC5440CFCAA03AF20 /* Pods-Pechinchasdodia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Pechinchasdodia/Pechinchasdodia.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Pechinchasdodia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.paradadesce.pechinchasdodia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		68D1CC111DB65F8F00ACF460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41363BE8B724B94BBCC4A008 /* Pods-PechinchasdodiaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PechinchasdodiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.paradadesce.PechinchasdodiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Pechinchasdodia;
+			};
+			name = Debug;
+		};
+		68D1CC121DB65F8F00ACF460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94D7A0994E676360F7C3E314 /* Pods-PechinchasdodiaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PechinchasdodiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.paradadesce.PechinchasdodiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Pechinchasdodia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68D1CBEB1DB65F8F00ACF460 /* Build configuration list for PBXProject "Pechinchasdodia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D1CC0B1DB65F8F00ACF460 /* Debug */,
+				68D1CC0C1DB65F8F00ACF460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68D1CC0D1DB65F8F00ACF460 /* Build configuration list for PBXNativeTarget "Pechinchasdodia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D1CC0E1DB65F8F00ACF460 /* Debug */,
+				68D1CC0F1DB65F8F00ACF460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68D1CC101DB65F8F00ACF460 /* Build configuration list for PBXNativeTarget "PechinchasdodiaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D1CC111DB65F8F00ACF460 /* Debug */,
+				68D1CC121DB65F8F00ACF460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68D1CBE81DB65F8F00ACF460 /* Project object */;
+}

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Pechinchasdodia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ebc-Ys-W0j">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3L-Fa-Ur0" userLabel="contentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_login" translatesAutoresizingMaskIntoConstraints="NO" id="8fw-K3-ptA">
+                                                <rect key="frame" x="100" y="56" width="174" height="175"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="175" id="fur-4y-kgf"/>
+                                                    <constraint firstAttribute="width" constant="174" id="sdI-sB-WxV"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" minimumFontSize="17" background="field_email" translatesAutoresizingMaskIntoConstraints="NO" id="j83-sm-GgW">
+                                                <rect key="frame" x="47" y="269" width="281" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="281" id="DM0-6v-vik"/>
+                                                    <constraint firstAttribute="height" constant="54" id="ood-uM-udR"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.41960784313725491" green="0.46274509803921571" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="senha" minimumFontSize="17" background="field_password" translatesAutoresizingMaskIntoConstraints="NO" id="Njd-J1-xh9">
+                                                <rect key="frame" x="46" y="341" width="282" height="56"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="282" id="QBb-KT-IvD"/>
+                                                    <constraint firstAttribute="height" constant="56" id="ifP-qQ-RU0"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.41960784309999999" green="0.46274509800000002" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5EI-tI-P7n">
+                                                <rect key="frame" x="44.5" y="430" width="286" height="59"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="286" id="ag3-mm-M7O"/>
+                                                    <constraint firstAttribute="height" constant="59" id="e3A-JR-WAF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                                <state key="normal" title="ENTRAR" backgroundImage="btn_login">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loginWithEmail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="37z-rD-lnt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlG-6b-9A5">
+                                                <rect key="frame" x="44.5" y="497" width="286" height="59"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="286" id="J7B-sJ-A79"/>
+                                                    <constraint firstAttribute="height" constant="59" id="xdS-5m-6dv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                                <state key="normal" title="ENTRAR COM FACEBOOK" backgroundImage="btn_facebook">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loginWithFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Pa-zr-A7u"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BuF-uZ-oHa">
+                                                <rect key="frame" x="53" y="601" width="268" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="a3I-s8-lBd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="12"/>
+                                                <state key="normal" title="Ainda não tem uma conta? Cadastre-se">
+                                                    <color key="titleColor" red="0.41960784309999999" green="0.46274509800000002" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="openRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ak9-aF-ono"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="8fw-K3-ptA" firstAttribute="centerX" secondItem="Z3L-Fa-Ur0" secondAttribute="centerX" id="0CA-O0-qVQ"/>
+                                            <constraint firstItem="5EI-tI-P7n" firstAttribute="centerX" secondItem="Z3L-Fa-Ur0" secondAttribute="centerX" id="58p-0n-9Ju"/>
+                                            <constraint firstItem="8fw-K3-ptA" firstAttribute="top" secondItem="Z3L-Fa-Ur0" secondAttribute="top" constant="56" id="MQG-5B-L36"/>
+                                            <constraint firstItem="rlG-6b-9A5" firstAttribute="top" secondItem="5EI-tI-P7n" secondAttribute="bottom" constant="8" id="RcJ-rr-JE3"/>
+                                            <constraint firstItem="j83-sm-GgW" firstAttribute="centerX" secondItem="Z3L-Fa-Ur0" secondAttribute="centerX" id="Sjn-aR-8et"/>
+                                            <constraint firstItem="Njd-J1-xh9" firstAttribute="top" secondItem="j83-sm-GgW" secondAttribute="bottom" constant="18" id="a0D-J2-NWF"/>
+                                            <constraint firstItem="Njd-J1-xh9" firstAttribute="centerX" secondItem="Z3L-Fa-Ur0" secondAttribute="centerX" id="e1N-NL-ZIV"/>
+                                            <constraint firstAttribute="trailing" secondItem="BuF-uZ-oHa" secondAttribute="trailing" constant="54" id="foX-zy-MSf"/>
+                                            <constraint firstItem="BuF-uZ-oHa" firstAttribute="top" secondItem="rlG-6b-9A5" secondAttribute="bottom" constant="45" id="hHV-Nx-JjD"/>
+                                            <constraint firstItem="BuF-uZ-oHa" firstAttribute="leading" secondItem="Z3L-Fa-Ur0" secondAttribute="leading" constant="53" id="jnO-v1-qms"/>
+                                            <constraint firstItem="j83-sm-GgW" firstAttribute="top" secondItem="8fw-K3-ptA" secondAttribute="bottom" constant="38" id="npS-co-hUI"/>
+                                            <constraint firstItem="rlG-6b-9A5" firstAttribute="centerX" secondItem="Z3L-Fa-Ur0" secondAttribute="centerX" id="qqI-sp-EML"/>
+                                            <constraint firstItem="5EI-tI-P7n" firstAttribute="top" secondItem="Njd-J1-xh9" secondAttribute="bottom" constant="33" id="sav-tf-YIh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Z3L-Fa-Ur0" firstAttribute="leading" secondItem="Ebc-Ys-W0j" secondAttribute="leading" id="Ean-fe-yRX"/>
+                                    <constraint firstItem="Z3L-Fa-Ur0" firstAttribute="centerX" secondItem="Ebc-Ys-W0j" secondAttribute="centerX" id="KaZ-Qm-wri"/>
+                                    <constraint firstItem="Z3L-Fa-Ur0" firstAttribute="centerY" secondItem="Ebc-Ys-W0j" secondAttribute="centerY" id="TfE-Gk-5gV"/>
+                                    <constraint firstItem="Z3L-Fa-Ur0" firstAttribute="top" secondItem="Ebc-Ys-W0j" secondAttribute="top" id="adY-Ja-D69"/>
+                                    <constraint firstAttribute="bottom" secondItem="Z3L-Fa-Ur0" secondAttribute="bottom" id="fw9-xq-6Yc"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z3L-Fa-Ur0" secondAttribute="trailing" id="rPd-fd-4c5"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ebc-Ys-W0j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8qx-Il-mx1"/>
+                            <constraint firstItem="Ebc-Ys-W0j" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="H9h-98-ZSk"/>
+                            <constraint firstAttribute="trailing" secondItem="Ebc-Ys-W0j" secondAttribute="trailing" id="bWq-2b-Qza"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ebc-Ys-W0j" secondAttribute="bottom" id="gaW-7N-hDW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cii-2k-GB7"/>
+                    <connections>
+                        <outlet property="emailField" destination="j83-sm-GgW" id="s1j-b4-tIC"/>
+                        <outlet property="passwordField" destination="Njd-J1-xh9" id="6sg-X5-TWn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965.60000000000002" y="-600.44977511244383"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="RGM-Yy-VLT">
+            <objects>
+                <viewController id="N3d-IS-vDr" customClass="MenuViewController" customModule="Pechinchasdodia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="39O-y8-VW6"/>
+                        <viewControllerLayoutGuide type="bottom" id="uIz-jq-PQt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0tS-n9-bTh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MLo-0y-Mm2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2430" y="-1270"/>
+        </scene>
+        <!--List Pechinchas View Controller-->
+        <scene sceneID="sAV-Gd-VG6">
+            <objects>
+                <viewController id="A4n-Kh-kui" customClass="ListPechinchasViewController" customModule="Pechinchasdodia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oMb-Yx-OQL"/>
+                        <viewControllerLayoutGuide type="bottom" id="6H8-0b-JIM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="87N-II-Qqv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7dl-9z-F7r"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="67c-5W-GWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2430" y="-600"/>
+        </scene>
+        <!--Detail Pechincha View Controller-->
+        <scene sceneID="VK7-Pp-0LB">
+            <objects>
+                <viewController id="DlZ-h7-a2I" customClass="DetailPechinchaViewController" customModule="Pechinchasdodia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nGa-xz-ble"/>
+                        <viewControllerLayoutGuide type="bottom" id="zAs-AG-T5S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6q7-LH-PdT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NyR-qG-Wv2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3137" y="-600"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="num-Wn-gw6">
+            <objects>
+                <viewController id="SAL-hU-IUA" customClass="RegisterViewController" customModule="Pechinchasdodia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I0o-9C-YSx"/>
+                        <viewControllerLayoutGuide type="bottom" id="8cm-36-HXA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SyI-dz-LbE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1jr-Yd-tqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966" y="63"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OFi-N7-iJ0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OY6-R1-iXi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="pMA-uj-qEQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="A4n-Kh-kui" kind="relationship" relationship="rootViewController" id="jsD-DP-mA7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yUA-dM-yOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1727" y="-600"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_facebook" width="286" height="59"/>
+        <image name="btn_login" width="286" height="59"/>
+        <image name="field_email" width="281" height="54"/>
+        <image name="field_password" width="282" height="56"/>
+        <image name="logo_login" width="174" height="175"/>
+    </resources>
+</document>
